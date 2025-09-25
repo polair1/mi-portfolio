@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -160,18 +160,72 @@ nav {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.project-card.featured {
+    border: 2px solid #ffd700;
+    position: relative;
+}
+
+.project-card.featured::before {
+    content: "⭐ PROYECTO DESTACADO";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #333;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border-radius: 15px 0 15px 0;
+    z-index: 2;
 }
 
 .project-image {
     height: 200px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+}
+
+/* Estilos específicos para cada proyecto */
+.viral-scope {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.faceit-valorant {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.crypto-dashboard {
+    background: linear-gradient(135deg, #f7931e, #f15a29);
+}
+
+.ai-chatbot {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
 .project-content {
