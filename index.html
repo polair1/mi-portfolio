@@ -35,7 +35,7 @@
         </div>
     </section>
 
-     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-title">Mis Proyectos</h2>
         <div class="projects-grid">
@@ -57,8 +57,9 @@
                         <span class="tech-tag">Social APIs</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link">Demo</a>
-                        <a href="#" class="project-link code-link">Código</a>
+                        <a href="#" class="project-link code-link" onclick="showProjectCode('viral-scope')">
+                            <i class="fas fa-code"></i> Ver Código
+                        </a>
                     </div>
                 </div>
             </div>
@@ -81,8 +82,9 @@
                         <span class="tech-tag">MongoDB</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link">Demo</a>
-                        <a href="#" class="project-link code-link">Código</a>
+                        <a href="#" class="project-link code-link" onclick="showProjectCode('faceit-valorant')">
+                            <i class="fas fa-code"></i> Ver Código
+                        </a>
                     </div>
                 </div>
             </div>
@@ -104,8 +106,9 @@
                         <span class="tech-tag">CoinGecko API</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link">Demo</a>
-                        <a href="#" class="project-link code-link">Código</a>
+                        <a href="#" class="project-link code-link" onclick="showProjectCode('crypto-dashboard')">
+                            <i class="fas fa-code"></i> Ver Código
+                        </a>
                     </div>
                 </div>
             </div>
@@ -128,13 +131,40 @@
                         <span class="tech-tag">WebSocket</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link">Demo</a>
-                        <a href="#" class="project-link code-link">Código</a>
+                        <a href="#" class="project-link code-link" onclick="showProjectCode('ai-chatbot')">
+                            <i class="fas fa-code"></i> Ver Código
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Code Modal -->
+    <div id="codeModal" class="code-modal">
+        <div class="code-modal-content">
+            <div class="code-modal-header">
+                <h3 id="codeModalTitle">Código del Proyecto</h3>
+                <span class="code-modal-close" onclick="closeCodeModal()">&times;</span>
+            </div>
+            <div class="code-modal-body">
+                <div class="code-tabs">
+                    <button class="code-tab active" onclick="showCodeTab('main')">Archivo Principal</button>
+                    <button class="code-tab" onclick="showCodeTab('config')">Configuración</button>
+                    <button class="code-tab" onclick="showCodeTab('utils')">Utilidades</button>
+                </div>
+                <div class="code-container">
+                    <div class="code-header">
+                        <span id="codeFileName">main.js</span>
+                        <button class="copy-code-btn" onclick="copyCode()">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                    <pre><code id="codeContent" class="language-javascript">// El código se cargará aquí...</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Timeline Section -->
     <section id="timeline" class="section">
@@ -146,17 +176,26 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2024 - Actualidad</div>
-                    <h3 class="timeline-title">Senior Full Stack Developer</h3>
-                    <p class="timeline-description">Liderando equipos de desarrollo en proyectos de gran escala. Implementando arquitecturas microservicios y mentorando desarrolladores junior.</p>
+                    <h3 class="timeline-title">🔥 Desarrollo de Viral Scope</h3>
+                    <p class="timeline-description">Creación de extensión de navegador para análisis de viralidad de contenido. Implementación de machine learning para predecir engagement y métricas en tiempo real.</p>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">2022 - 2024</div>
-                    <h3 class="timeline-title">Full Stack Developer</h3>
-                    <p class="timeline-description">Desarrollo de aplicaciones web completas usando MERN stack. Colaboración con equipos multidisciplinarios en metodologías ágiles.</p>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <h3 class="timeline-title">🎯 Lanzamiento Face It Valorant</h3>
+                    <p class="timeline-description">Desarrollo de plataforma competitiva para Valorant con sistema de matchmaking, estadísticas avanzadas y análisis de rendimiento. Integración con Riot Games API.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <h3 class="timeline-title">🚀 Proyectos Full Stack</h3>
+                    <p class="timeline-description">Desarrollo de múltiples aplicaciones web incluyendo crypto tracker y AI chatbot. Especialización en APIs, WebSockets y arquitecturas escalables.</p>
                 </div>
             </div>
 
@@ -164,8 +203,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2021 - 2022</div>
-                    <h3 class="timeline-title">Frontend Developer</h3>
-                    <p class="timeline-description">Especialización en React y Vue.js. Creación de interfaces de usuario responsive y accesibles. Optimización de performance web.</p>
+                    <h3 class="timeline-title">💻 Especialización Frontend</h3>
+                    <p class="timeline-description">Profundización en React, Vue.js y tecnologías modernas. Creación de interfaces interactivas y optimización de rendimiento web.</p>
                 </div>
             </div>
 
@@ -173,8 +212,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2020 - 2021</div>
-                    <h3 class="timeline-title">Junior Developer</h3>
-                    <p class="timeline-description">Primeros pasos en desarrollo web profesional. Aprendizaje de tecnologías modernas y mejores prácticas de programación.</p>
+                    <h3 class="timeline-title">🌱 Primeros Proyectos</h3>
+                    <p class="timeline-description">Inicio en desarrollo web profesional. Aprendizaje de tecnologías fundamentales y primeras aplicaciones funcionales.</p>
                 </div>
             </div>
 
@@ -182,17 +221,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <div class="timeline-date">2019 - 2020</div>
-                    <h3 class="timeline-title">Bootcamp Desarrollo Web</h3>
-                    <p class="timeline-description">Inmersión intensiva en tecnologías web modernas. HTML5, CSS3, JavaScript, Node.js y bases de datos.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-date">2015 - 2019</div>
-                    <h3 class="timeline-title">Carrera Universitaria</h3>
-                    <p class="timeline-description">Grado en Ingeniería en Sistemas. Fundamentos sólidos en programación, algoritmos y estructuras de datos.</p>
+                    <h3 class="timeline-title">📚 Formación Intensiva</h3>
+                    <p class="timeline-description">Bootcamp y cursos especializados en desarrollo web. HTML5, CSS3, JavaScript, Node.js y bases de datos. Fundación sólida en programación.</p>
                 </div>
             </div>
         </div>
