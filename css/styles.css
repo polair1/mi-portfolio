@@ -1,14 +1,19 @@
-{
+/* Reset general */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    overflow-x: hidden;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden;
 }
 
 /* Header y Navegación */
@@ -26,8 +31,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .logo {
@@ -119,15 +123,16 @@ nav {
 /* Secciones generales */
 .section {
     padding: 80px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    background: transparent; /* se ve el fondo del body */
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #333;
+    color: #fff;
     position: relative;
 }
 
@@ -139,7 +144,7 @@ nav {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: linear-gradient(45deg, #ffd700, #ff6b6b);
 }
 
 /* Sección de Proyectos */
@@ -301,7 +306,7 @@ nav {
 /* Timeline */
 .timeline-container {
     position: relative;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
