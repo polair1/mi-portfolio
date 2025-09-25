@@ -1,0 +1,204 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Mi Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador Full Stack apasionado por crear experiencias digitales increíbles</p>
+            <button class="cta-button" onclick="scrollToSection('projects')">Ver mis proyectos</button>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-description">Plataforma completa de comercio electrónico con carrito de compras, pagos y gestión de inventario.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo-link">Demo</a>
+                        <a href="#" class="project-link code-link">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Task Manager App</h3>
+                    <p class="project-description">Aplicación de gestión de tareas con colaboración en tiempo real y notificaciones push.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo-link">Demo</a>
+                        <a href="#" class="project-link code-link">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Dashboard Analytics</h3>
+                    <p class="project-description">Dashboard interactivo con visualización de datos en tiempo real y reportes personalizados.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo-link">Demo</a>
+                        <a href="#" class="project-link code-link">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">App Móvil</h3>
+                    <p class="project-description">Aplicación móvil nativa con geolocalización, cámara y sincronización offline.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Maps API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link demo-link">Demo</a>
+                        <a href="#" class="project-link code-link">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <h2 class="section-title">Mi Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Actualidad</div>
+                    <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                    <p class="timeline-description">Liderando equipos de desarrollo en proyectos de gran escala. Implementando arquitecturas microservicios y mentorando desarrolladores junior.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <h3 class="timeline-title">Full Stack Developer</h3>
+                    <p class="timeline-description">Desarrollo de aplicaciones web completas usando MERN stack. Colaboración con equipos multidisciplinarios en metodologías ágiles.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <h3 class="timeline-title">Frontend Developer</h3>
+                    <p class="timeline-description">Especialización en React y Vue.js. Creación de interfaces de usuario responsive y accesibles. Optimización de performance web.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2020 - 2021</div>
+                    <h3 class="timeline-title">Junior Developer</h3>
+                    <p class="timeline-description">Primeros pasos en desarrollo web profesional. Aprendizaje de tecnologías modernas y mejores prácticas de programación.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <h3 class="timeline-title">Bootcamp Desarrollo Web</h3>
+                    <p class="timeline-description">Inmersión intensiva en tecnologías web modernas. HTML5, CSS3, JavaScript, Node.js y bases de datos.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2015 - 2019</div>
+                    <h3 class="timeline-title">Carrera Universitaria</h3>
+                    <p class="timeline-description">Grado en Ingeniería en Sistemas. Fundamentos sólidos en programación, algoritmos y estructuras de datos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div>
+            <h3>¡Trabajemos juntos!</h3>
+            <p>¿Tienes un proyecto en mente? Me encantaría escucharte.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:tu@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
