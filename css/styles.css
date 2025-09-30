@@ -226,6 +226,11 @@ nav {
 
 .crypto-dashboard {
     background: linear-gradient(135deg, #f7931e, #f15a29);
+}
+
+.ai-chatbot {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
 
 .project-content {
     padding: 1.5rem;
