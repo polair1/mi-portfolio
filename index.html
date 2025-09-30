@@ -10,8 +10,7 @@
     <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+   <header>
         <nav>
             <div class="logo">Mi Portfolio</div>
             <ul class="nav-links">
@@ -31,7 +30,7 @@
         <div class="hero-content">
             <h1>Hola, soy Nunu</h1>
             <p>Cada proyecto es una oportunidad para innovar, aprender y dejar huella.</p>
-            <button class="cta-button" onclick="scrollToSection('projects')">Ver mis proyectos</button>
+            <button class="cta-button" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">Ver mis proyectos</button>
         </div>
     </section> 
     
@@ -93,14 +92,14 @@
                 <div class="project-image crypto-dashboard">
                     <i class="fab fa-bitcoin"></i>
                     <div class="project-overlay">
-                        <span>Crypto Tracker</span>
+                        <span>Htin</span>
                     </div>
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">Htin</h3>
                     <p class="project-description">Herramienta profesional para detectar vulnerabilidades de inyección HTML y Cross-Site Scripting (XSS) en aplicaciones web.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Python</span
+                        <span class="tech-tag">Python</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/Polair1/htin" target="_blank" class="project-link code-link">
@@ -194,10 +193,5 @@
             <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
 </body>
 </html>
-
-    
